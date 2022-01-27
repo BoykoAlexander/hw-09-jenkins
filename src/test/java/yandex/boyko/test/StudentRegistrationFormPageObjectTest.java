@@ -1,5 +1,6 @@
 package yandex.boyko.test;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
 import yandex.boyko.page.RegistrationPage;
 import yandex.boyko.page.components.TestBase;
@@ -19,7 +20,7 @@ public class StudentRegistrationFormPageObjectTest extends TestBase {
     RegistrationPage.calendarComponent.setDate();
     RegistrationPage.inputSubjects("English")
             .selectHobbies("Music")
-            //.uploadFileFromForm("driver.jpg")
+            .uploadFileFromForm("driver.jpg")
             .inputCurrentAdress("South Park")
             .selectStateInCheckbox("Uttar Pradesh")
             .selectCityInCheckbox("Merrut")

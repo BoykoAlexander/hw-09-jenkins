@@ -1,6 +1,7 @@
 package yandex.boyko.page;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import yandex.boyko.page.components.CalendarComponents;
 
 import static com.codeborne.selenide.Condition.text;
@@ -27,7 +28,7 @@ public class RegistrationPage {
           selectCity = $("#react-select-4-input"),
           clickButton = $("#submit");
 
-
+  @Step("Открываем главную страницу")
   public RegistrationPage openPage() {
     open("https://demoqa.com/automation-practice-form");
 
