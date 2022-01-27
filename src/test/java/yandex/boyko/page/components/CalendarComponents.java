@@ -1,8 +1,11 @@
 package yandex.boyko.page.components;
 
+import io.qameta.allure.Step;
+
 import static com.codeborne.selenide.Selenide.$;
 
 public class CalendarComponents {
+  @Step ("Ввод даты рождения")
   public void setDate() {
     $("#submit").scrollTo();
     $("#dateOfBirthInput").click();

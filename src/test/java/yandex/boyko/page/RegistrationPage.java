@@ -84,7 +84,7 @@ public class RegistrationPage {
     return this;
   }
 
-  @Step("Ввод предмета")
+  @Step("Загрузка файла")
   public RegistrationPage uploadFileFromForm(String fileName) {
     uploadFile.uploadFromClasspath(fileName);
 
@@ -98,7 +98,7 @@ public class RegistrationPage {
     return this;
   }
 
-  @Step("Выбор чек-бокса")
+  @Step("Выбор штата")
   public RegistrationPage selectStateInCheckbox(String selectState) {
     this.selectState.setValue(selectState).pressEnter();
 
