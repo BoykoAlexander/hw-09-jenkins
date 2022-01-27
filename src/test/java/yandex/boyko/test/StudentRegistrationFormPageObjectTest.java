@@ -19,7 +19,7 @@ public class StudentRegistrationFormPageObjectTest extends TestBase {
     RegistrationPage.calendarComponent.setDate();
     RegistrationPage.inputSubjects("English")
             .selectHobbies("Music")
-            .uploadFileFromForm("driver.jpg")
+            //.uploadFileFromForm("driver.jpg")
             .inputCurrentAdress("South Park")
             .selectStateInCheckbox("Uttar Pradesh")
             .selectCityInCheckbox("Merrut")
