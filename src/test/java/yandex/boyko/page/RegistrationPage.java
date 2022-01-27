@@ -112,13 +112,13 @@ public class RegistrationPage {
     return this;
   }
 
-  @Step("Нажатие отправки формы")
+  @Step("Отправка формы")
   public RegistrationPage clickButtonSubmit() {
     clickButton.click();
     return this;
   }
 
-  @Step("Assert проверка")
+  @Step("Проверка введённых данных формы")
   public RegistrationPage checkResultTable(String key, String value) {
     checkResultForm.$(byText(key)).parent().shouldHave(text(value));
 
