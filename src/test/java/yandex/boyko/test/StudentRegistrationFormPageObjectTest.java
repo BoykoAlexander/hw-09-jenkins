@@ -1,6 +1,5 @@
 package yandex.boyko.test;
 
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.Test;
 import yandex.boyko.page.RegistrationPage;
 import yandex.boyko.page.components.TestBase;
