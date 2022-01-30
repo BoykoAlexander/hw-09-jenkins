@@ -15,7 +15,7 @@ public class TestBase {
     SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
     Configuration.baseUrl = "https://demoqa.com";
-    Configuration.browserSize = "1920x1080,1280x800";
+    Configuration.browserSize = "1920x1080";
 
     String login = System.getProperty("login");
     String password = System.getProperty("password");
