@@ -23,7 +23,7 @@ public class TestBase {
     Configuration.browser = System.getProperty("browser");
     Configuration.browserVersion = System.getProperty("browserVersion");
     //https://user1:1234@selenoid.autotests.cloud/wd/hub
-    Configuration.remote = "https://"+ login +":"+ password +"@" + remote_url;
+    Configuration.remote = "https://" + login + ":" + password + "@" + remote_url;
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("enableVNC", true);
