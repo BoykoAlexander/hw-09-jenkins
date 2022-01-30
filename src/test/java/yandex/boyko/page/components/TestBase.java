@@ -14,12 +14,16 @@ public class TestBase {
   static void beforeAll() {
     SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
-    Configuration.baseUrl = "https://demoqa.com";
-    Configuration.browserSize = "1920x1080";
-
     String login = System.getProperty("login");
     String password = System.getProperty("password");
-    Configuration.remote = "https://"+ login +":"+ password +"@selenoid.autotests.cloud/wd/hub";
+    String remote_url = System.getProperty("remote_url");
+
+    Configuration.baseUrl = "https://demoqa.com";
+    Configuration.browserSize = "1920x1080";
+    Configuration.browser = System.getProperty("browser");
+    Configuration.browserVersion = System.getProperty("browserVersion");
+    //https://user1:1234@selenoid.autotests.cloud/wd/hub
+    Configuration.remote = "https://"+ login +":"+ password +"@" + remote_url;
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("enableVNC", true);
