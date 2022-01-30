@@ -18,11 +18,10 @@ public class TestBase {
     String password = System.getProperty("password", "1234");
     String remote_url = System.getProperty("remote_url", "selenoid.autotests.cloud/wd/hub");
 
-    Configuration.baseUrl = "https://demoqa.com";
     Configuration.browserSize = "1920x1080";
     Configuration.browser = System.getProperty("browser", "chrome");
     Configuration.browserVersion = System.getProperty("browserVersion", "92");
-    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+    //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     Configuration.remote = "https://" + login + ":" + password + "@" + remote_url;
 
     DesiredCapabilities capabilities = new DesiredCapabilities();
